@@ -40,12 +40,88 @@
     </script>
 </head>
 <body>
+    
     <form onsubmit="return validateForm();">
-        <label for="num">Numéro de téléphone :</label><br>
-        <input type="tel" id="num" name="num" required minlength="10" maxlength="10"><br><br>
-        <label for="rio">Code RIO :</label><br>
-        <input type="text" id="rio" name="rio" required minlength="12" maxlength="12"><br><br>
+        <img class="logo" src="https://labarrederire.fr/wp-content/uploads/2024/05/itzatel-1.png" alt="logo itzatel">
+
+        <section class="Champs">
+            <div class="Num">
+                <label for="num">Numéro de téléphone :</label><br>
+                <input type="tel" id="num" name="num" required minlength="10" maxlength="10"><br><br>
+            </div>
+            <div class="RIO">
+                <label for="rio">Code RIO :</label><br>
+                <input type="text" id="rio" name="rio" required minlength="12" maxlength="12"><br><br> 
+            </div>
+        </section>
         <button type="submit">Valider</button>
     </form>
 </body>
+<style>
+    .logo {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 30%;
+        background-color: white;
+        border-radius: 80px;
+        margin-bottom: 50px;
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        background-color: #b0163d;
+    }
+    input {
+        margin: 10px;
+        padding: 5px;
+        border-radius: 10px;
+        border-color: gray;
+        box-shadow: 1px 1px 5px black;
+        font-weight: bold;
+        font-size: 18px;
+
+    }
+
+    .Champs {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 70%;
+    }
+    .Num {
+        display: flex;
+        align-items: center;
+        color: white;
+        font-weight: bold;
+        font-size: 22px;
+        text-shadow: 1px 1px 5px black;
+    }
+
+    .RIO {
+        display: flex;
+        align-items: center;
+        color: white;
+        font-weight: bold;
+        font-size: 22px;
+        text-shadow: 1px 1px 5px black;
+    }
+
+    button {
+        margin-top: 100px;
+        padding:  5px 15px;
+        background-color: #007828;
+        color: white;
+        border-color: gray;
+        border-radius: 10px;
+        box-shadow: 1px 1px 5px black;
+        font-size: 22px;
+        font-weight: bold;
+        text-shadow: 1px 1px 5px black;
+        
+    }
+</style>
 </html>
