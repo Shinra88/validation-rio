@@ -58,69 +58,71 @@
     </form>
 </body>
 <style>
-    .logo {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 10%;
-        background-color: white;
-        border-radius: 80px;
-        margin-bottom: 50px;
-    }
-    form {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        height: 100vh;
-        background-color: #111827;
-    }
+body {
+    font-family: Arial, sans-serif;
+    background-color: transparent; /* Fond du body transparent pour s'adapter au fond de Noloco */    color: #111827;
+    margin: 0;
+    padding: 0;
+}
 
-    form h1 {
-        color: #b0163d;
-        font-size: 40px;
-        text-shadow: 1px 1px 5px black;
-        text-decoration: underline;
-        margin-bottom: 150px;
-    }
-    input {
-        margin: 10px;
-        padding: 5px;
-        border-radius: 10px;
-        border-color: gray;
-        box-shadow: 1px 1px 5px black;
-        font-weight: bold;
-        font-size: 18px;
+form {display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.2); /* Fond blanc à 20% d'opacité */
 
-    }
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: 50px auto; /* Centré avec du margin en haut et en bas */
+}
 
-    .Champs {
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        width: 70%;
-    }
-    .Num, .RIO {
-        display: flex;
-        align-items: center;
-        color: #b0163d;
-        font-weight: bold;
-        font-size: 18px;
-        text-shadow: 1px 1px 5px black;
-    }
+form h1 {
+    color: #b0163d; /* Garder la couleur distinctive */
+    font-size: 40px; /* Garder la taille de la police */
+    margin-bottom: 30px;
+    text-align: center; /* Centrer le titre */
+}
 
-    button {
-        margin-top: 100px;
-        padding:  5px 15px;
-        background-color: #007828;
-        color: white;
-        border-color: gray;
-        border-radius: 10px;
-        box-shadow: 1px 1px 5px black;
-        font-size: 18px;
-        font-weight: bold;
-        text-shadow: 1px 1px 5px black;
-        
-    }
+.logo {
+    display: block;
+    margin: 0 auto 20px auto;
+    width: 25%;
+    border: 2px solid #b0163d; /* Contour rouge */
+    border-radius: 50%; /* Forme ronde */
+
+}
+
+.Champs {
+    display: flex;
+    flex-direction: column; /* Passer en colonne pour une meilleure lisibilité sur mobile */
+    align-items: center; /* Centrer les éléments */
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+input {
+    padding: 10px;
+    border: 2px solid #b0163d; /* Ajouter une bordure rouge discrète */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 18px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007828;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+button:hover {
+    background-color: #005f1e; /* Assombrir le vert au survol */
+    transform: translateY(-2px); /* Légère animation au survol */
+}
 </style>
 </html>
