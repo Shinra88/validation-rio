@@ -43,7 +43,7 @@
     
     <form onsubmit="return validateForm();">
         <img class="logo" src="./logo-itzatel.webp" alt="logo itzatel">
-        <h1>Tester votre RIO</h1>
+            <h1>Tester votre RIO</h1>
         <section class="Champs">
             <div class="Num">
                 <label for="num">Numéro de téléphone :</label><br>
@@ -87,11 +87,14 @@ form h1 {
 .logo {
     display: block;
     margin: 0 auto 20px auto;
-    width: 25%;
+    width: 150px; /* Largeur contrôlée */
+    height: 100px; /* Hauteur ajustée pour l'ovale */
+    object-fit: contain; /* S'assurer que l'image s'adapte sans être déformée */
     border: 2px solid #b0163d; /* Contour rouge */
-    border-radius: 50%; /* Forme ronde */
-
+    border-radius: 30%; /* Rendre le contour ovale */
+    overflow: hidden; /* Masquer les parties de l'image qui dépassent */
 }
+
 
 .Champs {
     display: flex;
